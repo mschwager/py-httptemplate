@@ -10,8 +10,10 @@ use of [aiohttp](https://aiohttp.readthedocs.io/en/stable/), and Python 3's
 With this you can:
 
 * Do asynchronous things, handle many connections, web scale!
+* Build that blog you've been dreaming of... but with Python!
 * Integrate with PostgreSQL via [aiopg](https://aiopg.readthedocs.io/en/stable/), or MySQL via [aiomysql](https://aiomysql.readthedocs.io/en/latest/). Do database-y things, maintain state!
 * Avoid repetitive structuring of your CRUD apps. Base it off this template!
+* Place it behind [nginx](https://www.nginx.com/). Load balance! Serve static content! Add HTTP headers! Use SSL/TLS!
 
 # Installing
 
