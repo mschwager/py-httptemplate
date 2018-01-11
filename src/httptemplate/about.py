@@ -1,5 +1,5 @@
 __name__ = 'httptemplate'
 __version__ = '0.5.0'
-__description__ = ''
-__url__ = ''
-__license__ = ''
+__description__ = 'A Python HTTP server template package.'
+__url__ = 'https://github.com/mschwager/py-httptemplate'
+__license__ = 'Apache-2.0'
