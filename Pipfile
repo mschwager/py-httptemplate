@@ -4,16 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-"nose2" = "==0.6.5"
-cov-core = "==1.15.0"
-"flake8" = "==3.2.1"
-coveralls = "==1.1"
 "beautifulsoup4" = "==4.4.0"
+cov-core = "==1.15.0"
+coveralls = "==1.1"
+"nose2" = "==0.6.5"
+"flake8" = "*"
 ipdb = "*"
 ipython = "*"
 
 [packages]
-aiodns = "==1.1.1"
-aiohttp = "==2.3.7"
-"aiohttp-jinja2" = "==0.14.0"
-cchardet = "==2.1.1"
+"e1839a8" = {path = ".", editable = true}

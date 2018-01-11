@@ -1,0 +1,5 @@
+__name__ = 'httptemplate'
+__version__ = '0.5.0'
+__description__ = ''
+__url__ = ''
+__license__ = ''
