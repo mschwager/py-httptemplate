@@ -1,6 +1,7 @@
 # HTTP Server Template
 
 [![Build Status](https://travis-ci.org/mschwager/py-httptemplate.svg?branch=master)](https://travis-ci.org/mschwager/py-httptemplate)
+[![Coverage Status](https://coveralls.io/repos/github/mschwager/py-httptemplate/badge.svg?branch=master)](https://coveralls.io/github/mschwager/py-httptemplate?branch=master)
 
 Something simple to base your next web server off of! This project makes heavy
 use of [aiohttp](https://aiohttp.readthedocs.io/en/stable/), and Python 3's

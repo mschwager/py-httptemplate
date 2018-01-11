@@ -1,0 +1,3 @@
+[run]
+disable_warnings = include-ignored
+include = src/httptemplate/*
