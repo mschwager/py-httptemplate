@@ -1,6 +1,8 @@
 sudo: false
 dist: trusty
 language: python
+env:
+    - PYTHONASYNCIODEBUG=1
 python:
     - '3.5'
     - '3.6'
