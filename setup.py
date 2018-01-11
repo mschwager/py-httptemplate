@@ -13,7 +13,7 @@ about_filename = os.path.join(
     here,
     PACKAGE_DIRECTORY,
     PACKAGE_NAME,
-    '__version__.py',
+    'about.py',
 )
 about = {}
 
