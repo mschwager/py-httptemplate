@@ -1,0 +1,41 @@
+version: '3'
+services:
+  nginx:
+    ports:
+    - "80:80"
+    container_name: nginx
+    restart: on-failure
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "20"
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx.dockerfile
+  httptemplate1:
+    ports:
+    - "9000"
+    command: ["--port", "9000", "--host", "0.0.0.0"]
+    container_name: httptemplate1
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "20"
+    build:
+      context: .
+      dockerfile: dockerfiles/httptemplate.dockerfile
+  httptemplate2:
+    ports:
+    - "9000"
+    command: ["--port", "9000", "--host", "0.0.0.0"]
+    container_name: httptemplate2
+    logging:
+      driver: json-file
+      options:
+        max-size: "50m"
+        max-file: "20"
+    build:
+      context: .
+      dockerfile: dockerfiles/httptemplate.dockerfile

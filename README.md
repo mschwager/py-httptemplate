@@ -20,15 +20,17 @@ With this you can:
 ```
 $ git clone https://github.com/mschwager/py-httptemplate.git
 $ cd py-httptemplate
-$ pipenv install
+$ docker-compose build
 ```
 
 # Using
 
 ```
-$ pipenv run python -m httptemplate --static
-======== Running on http://127.0.0.1:8080 ========
-(Press CTRL+C to quit)
+$ docker-compose up
+Creating nginx ... done
+Creating httptemplate1 ...
+Creating httptemplate2 ...
+Attaching to httptemplate1, httptemplate2, nginx
 ...
 ```
 
