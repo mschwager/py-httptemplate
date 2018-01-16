@@ -24,6 +24,6 @@ def get_application(static=False):
 
     if static:
         static_directory = os.path.join(source_directory, 'static')
-        app.router.add_static('/static/', path=static_directory, name='static')
+        app.router.add_static('/static/', path=static_directory)
 
     return app
