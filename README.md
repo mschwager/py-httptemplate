@@ -28,9 +28,9 @@ $ docker-compose build
 ```
 $ docker-compose up
 Creating nginx ... done
-Creating httptemplate1 ...
-Creating httptemplate2 ...
-Attaching to httptemplate1, httptemplate2, nginx
+Creating uitemplate1 ...
+Creating uitemplate2 ...
+Attaching to uitemplate1, uitemplate2, nginx
 ...
 ```
 
@@ -56,7 +56,7 @@ OK
 ## Linting
 
 ```
-$ pipenv run flake8 src/httptemplate
+$ pipenv run flake8 src
 ```
 
 ## Debugging

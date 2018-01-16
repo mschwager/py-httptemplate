@@ -9,9 +9,13 @@ python:
     - '3.7-dev'
 install:
     - pip install pipenv
+    - pushd src/ui_pkg/
     - pipenv install --dev
+    - popd
 script:
-    - pipenv run flake8 src/httptemplate
+    - pipenv run flake8 --ignore=E501 src
+    - pushd src/ui_pkg/
     - pipenv run nose2 --with-coverage
+    - popd
 after_success:
     - coveralls

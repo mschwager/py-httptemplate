@@ -10,7 +10,7 @@ RUN mkdir -p \
     /var/www/root/src/static/
 
 COPY configuration/nginx.conf /etc/nginx/
-COPY src/static/ /var/www/root/src/static/
+COPY src/ui_pkg/uitemplate/static/ /var/www/root/src/static/
 
 RUN chown -R nginx:nginx \
     /etc/nginx/ \

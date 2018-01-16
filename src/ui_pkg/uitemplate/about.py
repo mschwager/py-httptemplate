@@ -1,4 +1,4 @@
-__name__ = 'httptemplate'
+__name__ = 'uitemplate'
 __version__ = '0.5.0'
 __description__ = 'A Python HTTP server template package.'
 __url__ = 'https://github.com/mschwager/py-httptemplate'

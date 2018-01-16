@@ -13,11 +13,11 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/nginx.dockerfile
-  httptemplate1:
+  uitemplate1:
     ports:
     - "9000"
     command: ["--port", "9000", "--host", "0.0.0.0"]
-    container_name: httptemplate1
+    container_name: uitemplate1
     logging:
       driver: json-file
       options:
@@ -25,12 +25,12 @@ services:
         max-file: "20"
     build:
       context: .
-      dockerfile: dockerfiles/httptemplate.dockerfile
-  httptemplate2:
+      dockerfile: dockerfiles/uitemplate.dockerfile
+  uitemplate2:
     ports:
     - "9000"
     command: ["--port", "9000", "--host", "0.0.0.0"]
-    container_name: httptemplate2
+    container_name: uitemplate2
     logging:
       driver: json-file
       options:
@@ -38,4 +38,4 @@ services:
         max-file: "20"
     build:
       context: .
-      dockerfile: dockerfiles/httptemplate.dockerfile
+      dockerfile: dockerfiles/uitemplate.dockerfile

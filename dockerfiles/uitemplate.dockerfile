@@ -12,12 +12,8 @@ RUN mkdir -p \
 
 RUN python3 -m pip install pipenv
 
-COPY Pipfile /var/www/root/
-COPY Pipfile.lock /var/www/root/
-COPY setup.py /var/www/root/
-COPY src/ /var/www/root/src/
-
+COPY src/ui_pkg/ /var/www/root/
 WORKDIR /var/www/root/
 RUN pipenv install --ignore-pipfile
 
-ENTRYPOINT ["pipenv", "run", "python3", "-m", "httptemplate"]
+ENTRYPOINT ["pipenv", "run", "python3", "-m", "uitemplate"]

@@ -6,7 +6,7 @@ import aiohttp_jinja2
 import bs4
 import jinja2
 
-from httptemplate import application
+from uitemplate import application
 
 
 class TestViews(unittest.TestCase):

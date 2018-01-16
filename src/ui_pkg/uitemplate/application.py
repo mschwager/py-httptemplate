@@ -1,15 +1,16 @@
-import os
+import pkg_resources
 
 import aiohttp
 import aiohttp_jinja2
 import jinja2
 
 from . import routes
+from . import about
 
 
 def get_application(static=False):
-    source_directory = os.path.dirname(os.path.dirname(__file__))
-    templates_directory = os.path.join(source_directory, 'templates')
+    templates_directory = pkg_resources.resource_filename(about.__name__, 'templates')
+    static_directory = pkg_resources.resource_filename(about.__name__, 'static')
 
     app = aiohttp.web.Application()
     loader = jinja2.FileSystemLoader(templates_directory)
@@ -23,7 +24,6 @@ def get_application(static=False):
     )
 
     if static:
-        static_directory = os.path.join(source_directory, 'static')
         app.router.add_static('/static/', path=static_directory)
 
     return app

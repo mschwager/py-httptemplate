@@ -4,7 +4,7 @@ import unittest
 
 from aiohttp import test_utils
 
-from httptemplate import application
+from uitemplate import application
 
 
 class TestApplication(test_utils.AioHTTPTestCase):
